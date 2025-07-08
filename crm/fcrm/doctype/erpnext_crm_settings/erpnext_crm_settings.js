@@ -1,7 +1,7 @@
 // Copyright (c) 2023, AiBizzHub, LLC and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on("AiBizzApp ERP CRM Settings", {
+frappe.ui.form.on("ERPNext CRM Settings", {
 	refresh(frm) {
 		if (!frm.doc.enabled) return;
 		frm.add_custom_button(__("Reset AiBizzApp ERP Form Script"), () => {

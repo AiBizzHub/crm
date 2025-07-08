@@ -1,6 +1,6 @@
 <template>
   <SettingsPage
-    doctype="AiBizzApp ERP CRM Settings"
+    doctype="ERPNext CRM Settings"
     :title="__('AiBizzApp ERP Settings')"
     :successMessage="__('AiBizzApp ERP Settings updated')"
     class="p-8"

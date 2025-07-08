@@ -88,7 +88,7 @@ def get_erpnext_site_client(erpnext_crm_settings):
 
 @frappe.whitelist()
 def get_customer_link(crm_deal):
-	erpnext_crm_settings = frappe.get_single("AiBizzApp ERP CRM Settings")
+	erpnext_crm_settings = frappe.get_single("ERPNext CRM Settings")
 	if not erpnext_crm_settings.enabled:
 		frappe.throw(_("AiBizzApp ERP is not integrated with the CRM"))
 
@@ -114,7 +114,7 @@ def get_customer_link(crm_deal):
 
 @frappe.whitelist()
 def get_quotation_url(crm_deal, organization):
-	erpnext_crm_settings = frappe.get_single("AiBizzApp ERP CRM Settings")
+	erpnext_crm_settings = frappe.get_single("ERPNext CRM Settings")
 	if not erpnext_crm_settings.enabled:
 		frappe.throw(_("AiBizzApp ERP is not integrated with the CRM"))
 
@@ -189,7 +189,7 @@ def get_organization_address(organization):
 	}
 
 def create_customer_in_erpnext(doc, method):
-	erpnext_crm_settings = frappe.get_single("AiBizzApp ERP CRM Settings")
+	erpnext_crm_settings = frappe.get_single("ERPNext CRM Settings")
 	if (
 		not erpnext_crm_settings.enabled
 		or not erpnext_crm_settings.create_customer_on_status_change

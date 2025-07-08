@@ -104,7 +104,7 @@
  "modified": "2024-09-17 19:21:11.060901",
  "modified_by": "Administrator",
  "module": "FCRM",
- "name": "AiBizzApp ERP CRM Settings",
+ "name": "ERPNext CRM Settings",
  "owner": "Administrator",
  "permissions": [
   {
